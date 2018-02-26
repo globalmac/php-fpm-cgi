@@ -11,9 +11,9 @@ import (
 
 var (
 	phpVersion   = "7.2"
-	viaSocket    = false
-	host	       = "127.0.0.1"
-	port	       = 9000
+	viaSocket    = true
+	host	     = "127.0.0.1"
+	port	     = 9000
 	timeout	     = int(1000)
 	responseType = "full&json"
 )
