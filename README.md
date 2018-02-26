@@ -22,7 +22,7 @@ service php7.2-fpm restart
 **2) Download & build package with your OS & ARCH vars:**
 
 ````Bash
-env GOOS={OS} GOARCH={ARCH} go build -v github.com/globalmac/php-fpm-cgi
+go get github.com/globalmac/php-fpm-cgi && env GOOS={OS} GOARCH={ARCH} go build -v github.com/globalmac/php-fpm-cgi
 ````
 Where:
 
