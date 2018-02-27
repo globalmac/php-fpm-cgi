@@ -35,7 +35,7 @@ func GetStatus() string {
 
 	if viaSocket {
 
-		return RunCgi(env)
+		return RunUnix(env)
 
 	} else {
 
@@ -45,7 +45,7 @@ func GetStatus() string {
 
 }
 
-func RunCgi(env map[string]string) string {
+func RunUnix(env map[string]string) string {
 
 	fscgi, err := fcgiclient.Dial("unix", "/var/run/php/php"+phpVersion+"-fpm.sock")
 
